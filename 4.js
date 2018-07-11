@@ -35,7 +35,7 @@ console.log(squareAdd(5, 7)); // 144 = (5 + 7) ^ 2
 */
 
 function fmap(a, gen) {
-    return function () {
+    return function() {
         return a(gen.apply(this, arguments));
     }
 }
