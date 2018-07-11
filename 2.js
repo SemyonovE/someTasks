@@ -10,8 +10,10 @@ console.log(take(gen2, 5)); // [0, 2, 4, 6, 8 ]
 
 function take(gen, x) {
     var array = [];
+
     for(var i = 0; i < x; i++) {
         array.push(gen());
     }
+
     return array;
 }
